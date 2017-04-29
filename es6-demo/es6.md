@@ -160,9 +160,9 @@ console.log(arr1);//[1,2,3,4,5]
 ```
 demo2
 ```js
-let obj={a:{b:1}}
-let {...x}=obj;
-console.log(x);//a:{b:1}
+let obj={a:1}
+let obj2={...obj,b:2};
+console.log(x);//{a:1,b:2}
 ```
 #### 7.Default 默认参数值
 还有一种是参数里可以对象解构
