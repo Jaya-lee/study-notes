@@ -47,6 +47,8 @@ let arr1=arr.map(function(item){
 })
 console.log(arr1);
 ```
+渲染数组时，必须要给每项加key值，作为唯一的标识，且key值必须要连续。
+map
 ## filter
 ```js
 //filter 三个参数(item,index,array)
@@ -74,3 +76,21 @@ console.log(Object.keys(obj));
 // ["0","1","2"]
 ```
 .keys()返回的是一个数组，这样理解数组中的key值就是它的索引值，对象中的key值为属性名。
+
+## includes
+
+判断当前数组是否包含某指定的值，如果是，则返回 true，否则返回 false。
+```js
+var a = [1, 2, 3];
+a.includes(2); // true
+a.includes(4); // false
+```
+fromIndex 大于等于数组长度
+```js
+ 如果fromIndex 大于等于数组长度 ，则返回 false 。该数组不会被搜索。
+var arr = ['a', 'b', 'c'];
+arr.includes('c', 2);   //true
+arr.includes('c', 100); // false
+```
+arr.filter(items=>过滤条件[返回布尔值])
+这两个常用做三目运算
