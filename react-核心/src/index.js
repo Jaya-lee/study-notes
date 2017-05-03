@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDom from 'react-dom'
 
-import App from './App.js'
+import Form from './form.js'
 
-ReactDom.render(<App />,document.querySelector('#root'))
+ReactDom.render(<Form />,document.querySelector('#root'))
