@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <title>Document</title>
+    <style>
+    .wrap{
+        padding-bottom: 100px;
+    }
+    .row>div{
+        border: 1px solid #000;
+    }
+        .row>div:nth-child(odd){
+            background: pink;
+        }
+        .row>div:nth-child(even){
+            background: teal;
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <table class="table table-condensed">
+        <!-- On rows -->
+        <tr class="active"></tr>
+        <tr class="success">123</tr>
+        <tr class="warning">123</tr>
+        <tr class="danger">123</tr>
+        <tr class="info">123</tr>
+
+        On cells (`td` or `th`)
+         <tr>
+          <td class="active">123</td>
+          <td class="success">123</td>
+          <td class="warning">123</td>
+          <td class="danger">123</td>
+          <td class="info">123</td>
+        </tr>
+    </table>
+    进度条
+    <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+        60%
+          </div>
+    </div>
+    可动
+    <div class="progress">
+         <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+         <span class="sr-only">45% Complete</span>
+         </div>
+    </div>
+    －－－－－－－－－－－－－－－－－－
+    <form>
+       <div class="form-group">
+         <label for="exampleInputEmail1">Email address</label>
+         <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+       </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputFile">File input</label>
+            <input type="file" id="exampleInputFile">
+            <p class="help-block">Example block-level help text here.</p>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"> Check me out
+            </label>
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+        <br/>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1 col-xs-4" >.col-md-1</div>
+            <div class="col-md-1 col-xs-4 ">.col-md-1</div>
+            <div class="col-md-1 col-xs-4">.col-md-1</div>
+            <div class="col-md-1 col-xs-4">.col-md-1</div>
+            <div class="col-md-1 col-xs-4">.col-md-1</div>
+            <div class="col-md-1 col-xs-4">.col-md-1</div>
+            <div class="col-md-1 col-xs-4">.col-md-1</div>
+            <div class="col-md-1 col-xs-4">.col-md-1</div>
+            <div class="col-md-1 col-xs-4">.col-md-1</div>
+            <div class="col-md-1 col-xs-4">.col-md-1</div>
+            <div class="col-md-1 col-xs-4">.col-md-1</div>
+            <div class="col-md-1 col-xs-4">.col-md-1</div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-xs-4">.col-md-8</div>
+            <div class="col-md-4 col-xs-6">.col-md-4</div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">.col-md-4</div>
+            <div class="col-md-4">.col-md-4</div>
+            <div class="col-md-4">.col-md-4</div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">.col-md-6</div>
+            <div class="col-md-6">.col-md-6</div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">.col-md-4</div>
+            <div class="col-md-4 col-md-offset-4">.col-md-4 .col-md-offset-4</div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
+            <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">.col-md-6 .col-md-offset-3</div>
+        </div>
+        <h1>js部分</h1>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+        Launch demo modal
+        </button>
+
+            <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- tab -->
+        <div>
+         <!-- Nav tabs -->
+          <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+            <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+          </ul>
+
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="home">１１</div>
+            <div role="tabpanel" class="tab-pane" id="profile">１２</div>
+            <div role="tabpanel" class="tab-pane" id="messages">１３</div>
+            <div role="tabpanel" class="tab-pane" id="settings">１４</div>
+          </div>
+        </div>
+        <!-- 小框 -->
+        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
+
+        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
+
+        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
+
+        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
+        <p>－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－</p>
+        <!-- 总按钮 -->
+        <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">点我弹出/隐藏弹出框</button>
+        <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+          Popover on 左侧
+        </button>
+        <!-- 四个弹出框 -->
+        <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+          Popover on 顶部
+        </button>
+
+        <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
+        sagittis lacus vel augue laoreet rutrum faucibus.">
+          Popover on 底部
+        </button>
+
+        <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+          Popover on 右侧
+        </button>
+
+    </div>
+</div>
+<script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+//必须加　　hover
+$(function () {
+$('[data-toggle="tooltip"]').tooltip()
+})
+//弹出框 初始化所有弹出框
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
+$('#element').popover('toggle') //点击show/hide
+</script>
+</body>
+</html>
